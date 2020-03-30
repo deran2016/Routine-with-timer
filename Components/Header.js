@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
-export default class RoutineBox extends Component {
+export default class Header extends Component {
     render() {
         return (
             <View></View>
