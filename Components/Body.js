@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { StyleSheet, View, Dimensions } from 'react-native';
 import SortableList from 'react-native-sortable-list'
 import RoutineBox from './RoutineBox';
+import RoundButton from './RoundButton';
 
 const window = Dimensions.get('window');
 
@@ -30,6 +31,7 @@ export default class Body extends Component {
                     data={data}
                     renderRow={this._renderRow}
                 />
+                <RoundButton text={"+"}/>
             </View>
         );
     }
