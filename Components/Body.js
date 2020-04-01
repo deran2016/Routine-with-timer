@@ -3,7 +3,6 @@ import { StyleSheet, View, Dimensions } from 'react-native';
 import SortableList from 'react-native-sortable-list'
 import RoutineBox from './RoutineBox';
 import RoundButton from './RoundButton';
-import { addListener } from 'expo/build/Updates/Updates';
 
 const window = Dimensions.get('window');
 
@@ -21,12 +20,6 @@ let data = {
 export default class Body extends Component {
     _renderRow = ({data, active}) => {
         return <RoutineBox data={data} active={active}/>
-    }
-
-    addList = () => {
-        /* 
-            Function
-        */
     }
 
     render() {
