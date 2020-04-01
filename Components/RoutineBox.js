@@ -73,9 +73,9 @@ const styles = StyleSheet.create({
         padding: 16,
         height: 80,
         flex: 1,
-        marginTop: 7,
+        marginTop: 6,
         marginBottom: 12,
-        borderRadius: 30,
+        borderRadius: 25,
 
 
         ...Platform.select({
@@ -103,7 +103,7 @@ const styles = StyleSheet.create({
     },
 
     text: {
-        fontSize: 24,
+        fontSize: 25,
         color: '#222222',
     },
 });

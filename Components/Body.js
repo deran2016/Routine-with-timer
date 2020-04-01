@@ -3,6 +3,7 @@ import { StyleSheet, View, Dimensions } from 'react-native';
 import SortableList from 'react-native-sortable-list'
 import RoutineBox from './RoutineBox';
 import RoundButton from './RoundButton';
+import { addListener } from 'expo/build/Updates/Updates';
 
 const window = Dimensions.get('window');
 
@@ -22,6 +23,12 @@ export default class Body extends Component {
         return <RoutineBox data={data} active={active}/>
     }
 
+    addList = () => {
+        /* 
+            Function
+        */
+    }
+
     render() {
         return (
             <View style={styles.container}>
@@ -31,7 +38,7 @@ export default class Body extends Component {
                     data={data}
                     renderRow={this._renderRow}
                 />
-                <RoundButton text={"+"}/>
+                <RoundButton text={"┼"} onclick={() => addList()}/>
             </View>
         );
     }
@@ -42,7 +49,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#eee',
+        backgroundColor: '#CECECE',
 
         ...Platform.select({
             ios: {

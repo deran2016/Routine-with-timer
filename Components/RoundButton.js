@@ -13,14 +13,13 @@ export default class RoundButton extends Component {
 
 const styles = StyleSheet.create({
     button: {
-
         backgroundColor: 'green',
         alignItems: 'center',
         justifyContent: 'center',
         width: 70,
         height: 70,
         marginBottom: 30,
-        borderRadius: 25,
+        borderRadius: 35,
         
 
         ...Platform.select({
@@ -39,7 +38,7 @@ const styles = StyleSheet.create({
     },
 
     text: {
-        fontSize: 40,
+        fontSize: 30,
         textAlign: 'center',
         color: 'white'
     }
